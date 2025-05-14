@@ -17,9 +17,7 @@
             justify-content: center;
             align-items: center;
             background: 
-                /* Затемнение 70% */
                 linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                /* Ваш новый фон */
                 url('https://i.ibb.co/G4zFDDj2/samurai-armor.jpg') no-repeat center center;
             background-size: cover;
             background-attachment: fixed;
@@ -51,17 +49,26 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        /* Специальный стиль для кнопки отзывов */
+        .reviews-btn {
+            background-color: rgba(106, 27, 154, 0.9); /* Фиолетовый цвет */
+        }
+
         .telegram-btn:hover {
             background-color: rgba(0, 102, 153, 0.9);
             transform: translateY(-3px);
             box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
         }
 
+        .reviews-btn:hover {
+            background-color: rgba(81, 20, 118, 0.9); /* Темно-фиолетовый при наведении */
+        }
+
         .divider {
             width: 250px;
             height: 1px;
             background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
-            margin: 2rem auto;
+            margin: 1.5rem auto;
         }
 
         .content-wrapper {
@@ -76,6 +83,7 @@
         @media (max-width: 768px) {
             .shogun-title { font-size: 3rem; }
             .content-wrapper { padding: 20px; width: 90%; }
+            .telegram-btn { padding: 12px 25px; font-size: 1.1rem; }
         }
     </style>
 </head>
@@ -93,6 +101,12 @@
         <div class="btn-container">
             <span class="btn-label">Наш Telegram bot:</span>
             <a href="https://t.me/shogunmarket_bot" class="telegram-btn" target="_blank">@shogunmarket_bot</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="btn-container">
+            <a href="https://t.me/+JbUzxYjVXaczMWU6" class="telegram-btn reviews-btn" target="_blank">Отзывы</a>
         </div>
     </div>
 </body>
