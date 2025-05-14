@@ -64,12 +64,14 @@
         }
 
         .content-wrapper {
-            background: rgba(10, 10, 10, 0.6);
+            background: rgba(10, 10, 10, 0.5);
             padding: 30px;
             border-radius: 5px;
             border: 1px solid rgba(255, 215, 0, 0.2);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
             max-width: 800px;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px); /* Для Safari */
         }
 
         .btn-container {
@@ -87,8 +89,17 @@
 
         @media (max-width: 768px) {
             .shogun-title { font-size: 3rem; }
-            .content-wrapper { padding: 20px; width: 90%; }
-            .telegram-btn { padding: 12px 25px; font-size: 1.1rem; width: 180px; }
+            .content-wrapper { 
+                padding: 20px; 
+                width: 90%;
+                backdrop-filter: blur(1px);
+                -webkit-backdrop-filter: blur(1px);
+            }
+            .telegram-btn { 
+                padding: 12px 25px; 
+                font-size: 1.1rem; 
+                width: 180px; 
+            }
         }
     </style>
 </head>
