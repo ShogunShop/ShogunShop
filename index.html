@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOGUN SHOP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .shogun-title {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #e63946;
+            text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+        }
+        .telegram-btn {
+            display: inline-block;
+            background-color: #0088cc;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 24px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .telegram-btn:hover {
+            background-color: #006699;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .divider {
+            width: 200px;
+            height: 2px;
+            background: #333;
+            margin: 1.5rem auto;
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn-label {
+            margin-bottom: 5px;
+            font-size: 1rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="shogun-title">SHOGUN SHOP</h1>
+    
+    <div class="btn-container">
+        <span class="btn-label">Оператор в Telegram:</span>
+        <a href="https://t.me/SHOGUN_BOSS" class="telegram-btn" target="_blank">@SHOGUN_BOSS</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="btn-container">
+        <span class="btn-label">Наш Telegram bot:</span>
+        <a href="https://t.me/shogunmarket_bot" class="telegram-btn" target="_blank">@shogunmarket_bot</a>
+    </div>
+</body>
+</html>
