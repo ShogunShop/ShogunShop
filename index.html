@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #111;
             color: white;
             text-align: center;
             margin: 0;
@@ -17,66 +16,112 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80') no-repeat center center;
+            background-size: cover;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
+        
         .shogun-title {
-            font-size: 4rem;
+            font-size: 4.5rem;
             font-weight: bold;
             margin-bottom: 2rem;
-            letter-spacing: 3px;
+            letter-spacing: 5px;
             text-transform: uppercase;
             color: #e63946;
-            text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+            text-shadow: 0 0 15px rgba(230, 57, 70, 0.7);
+            position: relative;
+            z-index: 2;
         }
+        
         .telegram-btn {
             display: inline-block;
-            background-color: #0088cc;
+            background-color: rgba(0, 136, 204, 0.9);
             color: white;
-            font-size: 1.2rem;
-            padding: 12px 24px;
-            margin: 10px;
-            border-radius: 5px;
+            font-size: 1.3rem;
+            padding: 15px 30px;
+            margin: 15px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: bold;
             transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 2;
         }
+        
         .telegram-btn:hover {
-            background-color: #006699;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            background-color: rgba(0, 102, 153, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
         }
+        
         .divider {
-            width: 200px;
-            height: 2px;
-            background: #333;
-            margin: 1.5rem auto;
+            width: 250px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+            margin: 2rem auto;
+            position: relative;
+            z-index: 2;
         }
+        
         .btn-container {
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+            z-index: 2;
         }
+        
         .btn-label {
-            margin-bottom: 5px;
-            font-size: 1rem;
-            color: #aaa;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Анимация для атмосферности */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .content-wrapper {
+            animation: fadeIn 1.5s ease-out;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Эффект старинного свитка */
+        .scroll-effect {
+            background: rgba(10, 10, 10, 0.6);
+            padding: 40px;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
         }
     </style>
 </head>
 <body>
-    <h1 class="shogun-title">SHOGUN SHOP</h1>
-    
-    <div class="btn-container">
-        <span class="btn-label">Оператор в Telegram:</span>
-        <a href="https://t.me/SHOGUN_BOSS" class="telegram-btn" target="_blank">@SHOGUN_BOSS</a>
-    </div>
-    
-    <div class="divider"></div>
-    
-    <div class="btn-container">
-        <span class="btn-label">Наш Telegram bot:</span>
-        <a href="https://t.me/shogunmarket_bot" class="telegram-btn" target="_blank">@shogunmarket_bot</a>
+    <div class="content-wrapper">
+        <div class="scroll-effect">
+            <h1 class="shogun-title">SHOGUN SHOP</h1>
+            
+            <div class="btn-container">
+                <span class="btn-label">Оператор в Telegram:</span>
+                <a href="https://t.me/SHOGUN_BOSS" class="telegram-btn" target="_blank">@SHOGUN_BOSS</a>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <div class="btn-container">
+                <span class="btn-label">Наш Telegram bot:</span>
+                <a href="https://t.me/shogunmarket_bot" class="telegram-btn" target="_blank">@shogunmarket_bot</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
